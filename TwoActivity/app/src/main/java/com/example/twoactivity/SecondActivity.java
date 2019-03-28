@@ -1,8 +1,8 @@
 package com.example.twoactivity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class SecondActivity extends AppCompatActivity {
 
     // Extra
-    public static final String EXTRA_REPLY = "com.example.android.twoactivity.extra.REPLY";
+    public static final String EXTRA_REPLY = "com.example.twoactivity.extra.REPLY";
 
     // Control
     private EditText mReply;
