@@ -43,11 +43,9 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 Log.d(LOG_TAG, "Result Intent: OK");
                 String reply = data.getStringExtra(SecondActivity.EXTRA_REPLY);
-                if (reply != null) {
-                    mReplyHeadTextView.setVisibility(View.VISIBLE);
-                    mReplyTextView.setText(reply);
-                    mReplyTextView.setVisibility(View.VISIBLE);
-                }
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(reply);
+                mReplyTextView.setVisibility(View.VISIBLE);
             } else {
                 Log.d(LOG_TAG, "Result Intent: CANCEL");
                 mReplyHeadTextView.setVisibility(View.INVISIBLE);
