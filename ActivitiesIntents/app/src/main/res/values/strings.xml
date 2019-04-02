@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivitiesIntents</string>
+    <string name="app_name_second">Second Activity</string>
+    <string name="hint_message">Write a message</string>
+</resources>
