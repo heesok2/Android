@@ -19,14 +19,59 @@ public class MainActivity extends AppCompatActivity {
     private TextView mReplyTextView;
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LOG_TAG, "MainActivity:onStart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG, "MainActivity:onDestroy");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG, "MainActivity:onStop");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(LOG_TAG, "MainActivity:onResume");
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.d(LOG_TAG, "MainActivity:onPostResume");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(LOG_TAG, "MainActivity:onRestart");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG, "MainActivity:onPause");
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(LOG_TAG, "MainActivity:onCreate");
+
         setContentView(R.layout.activity_main);
 
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
         mMessageEditText = findViewById(R.id.editText_main);
     }
+
 
     public void launchSecondActivity(View view) {
         Log.d(LOG_TAG, "Button Clicked!");
